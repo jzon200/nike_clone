@@ -19,6 +19,17 @@ class MenScreen extends StatelessWidget {
           items: _offers,
         ),
         CategoryList(),
+        SizedBox(height: 24.0),
+        SectionList(
+          title: "Find The Right Running Shoes",
+          items: _runningShoes,
+        ),
+        SectionList(
+          title: "Shop By Collection",
+          items: _collections,
+        ),
+        SizedBox(height: 24.0),
+        ProductsGrid(productList: _justInItems),
       ],
     );
   }
@@ -45,4 +56,46 @@ const _offers = [
   '06 Aug',
   '07 Aug',
   'Show All',
+];
+
+const _runningShoes = [
+  'The On-The-Goer',
+  'The Jogger',
+  'The Runner',
+  'The Racer',
+];
+
+const _collections = [
+  'Sandals and Slides',
+  'Pegasus',
+  'Accesories & Equipment',
+  'Air Force 1',
+  'Nike By You',
+];
+
+const _justInItems = [
+  {
+    'name': 'NOCTA Hot Step Air Terra',
+    'price': 7795,
+  },
+  {
+    'name': 'Zion 2 PF',
+    'price': 6595,
+  },
+  {
+    'name': 'Nike ZoomX Vaporfly NEXT% 2',
+    'price': 10995,
+  },
+  {
+    'name': 'Noke Waffle One SE',
+    'price': 5295,
+  },
+  {
+    'name': 'Nike Everyday Plus',
+    'price': 495,
+  },
+  {
+    'name': 'Chelsea F.C. 2022/23 Stadium Home',
+    'price': 3595,
+  },
 ];
