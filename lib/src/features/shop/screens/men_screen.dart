@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike_clone/src/features/shop/widgets/brands_grid.dart';
 
 import '../widgets/widgets.dart';
 
@@ -39,6 +40,7 @@ class MenScreen extends StatelessWidget {
           title: "Recently Viewed",
           items: _collections,
         ),
+        BrandsGrid(),
       ],
     );
   }

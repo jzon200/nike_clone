@@ -26,5 +26,6 @@ ThemeData buildNikeTheme() {
       ),
       labelColor: nikeBlack87,
     ),
+    splashFactory: InkRipple.splashFactory,
   );
 }

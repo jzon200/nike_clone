@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../theme/colors.dart';
+
 class SectionList extends StatelessWidget {
   const SectionList({
     Key? key,
@@ -42,6 +44,7 @@ class SectionList extends StatelessWidget {
             margin: const EdgeInsets.symmetric(vertical: 16.0),
             child: ListView.separated(
               primary: false,
+              shrinkWrap: true,
               scrollDirection: Axis.horizontal,
               itemCount: items.length,
               itemBuilder: (_, index) {
@@ -56,9 +59,8 @@ class SectionList extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: double.infinity,
                           height: maxSize,
-                          color: Colors.grey,
+                          color: lightGrey,
                           margin: const EdgeInsets.only(bottom: 8.0),
                         ),
                         Text(

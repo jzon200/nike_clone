@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+import '../../../theme/colors.dart';
+
 class ProductsGrid extends StatelessWidget {
   const ProductsGrid({Key? key, required this.productList}) : super(key: key);
 
@@ -22,6 +24,7 @@ class ProductsGrid extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        const SizedBox(height: 24.0),
         Padding(
           padding: const EdgeInsets.only(
             left: 20.0,
@@ -54,7 +57,7 @@ class ProductsGrid extends StatelessWidget {
                           children: [
                             Container(
                               height: 112,
-                              color: Colors.grey[400],
+                              color: lightGrey,
                             ),
                             Padding(
                               padding: const EdgeInsets.symmetric(
