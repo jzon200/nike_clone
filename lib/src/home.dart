@@ -13,15 +13,7 @@ class Home extends StatelessWidget {
       child: Scaffold(
         appBar: const NikeAppBar(tabs: _tabs),
         drawer: const NikeDrawer(),
-        body: TabBarView(
-          children: [
-            const MenScreen(),
-            for (final tab in _tabs.skip(1))
-              Center(
-                child: Text(tab),
-              ),
-          ],
-        ),
+        body: const ShopScreen(tabs: _tabs),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: const Icon(Icons.add),

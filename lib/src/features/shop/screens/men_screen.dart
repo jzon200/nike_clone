@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../shared/widgets/widgets.dart';
+import '../widgets/widgets.dart';
 
 class MenScreen extends StatelessWidget {
   const MenScreen({Key? key}) : super(key: key);
@@ -30,6 +30,15 @@ class MenScreen extends StatelessWidget {
         ),
         SizedBox(height: 24.0),
         ProductsGrid(productList: _justInItems),
+        PopularSearches(searches: _popularSearches),
+        SectionList(
+          title: "Recommended For You",
+          items: _collections,
+        ),
+        SectionList(
+          title: "Recently Viewed",
+          items: _collections,
+        ),
       ],
     );
   }
@@ -98,4 +107,11 @@ const _justInItems = [
     'name': 'Chelsea F.C. 2022/23 Stadium Home',
     'price': 3595,
   },
+];
+
+const _popularSearches = [
+  'Air Force 1',
+  'Air Jordan 1',
+  'Air Max',
+  'Blazer',
 ];
