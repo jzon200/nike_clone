@@ -55,12 +55,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/nike_logo.svg
-    - assets/nike_lab_logo.jpg
-    - assets/air_jordan_logo.svg
-    - assets/nike_sb_logo.png
-    - assets/nike_acg_logo.svg
-    - assets/nike_by_you_logo.svg
+    - assets/brands/
+    - assets/my_interests/
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

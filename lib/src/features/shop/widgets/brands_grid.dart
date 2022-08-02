@@ -8,7 +8,9 @@ class BrandsGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
+    final theme = Theme.of(context);
+    final textTheme = theme.textTheme;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -26,7 +28,7 @@ class BrandsGrid extends StatelessWidget {
                 lightGrey,
                 Colors.transparent,
               ],
-              radius: 0.75,
+              radius: 0.8,
               focal: Alignment.center,
             ),
           ),
@@ -40,7 +42,7 @@ class BrandsGrid extends StatelessWidget {
             children: [
               for (final assetName in _brandLogos)
                 Material(
-                  color: Colors.white,
+                  color: theme.scaffoldBackgroundColor,
                   child: InkWell(
                     onTap: () {},
                     child: Center(
@@ -60,17 +62,17 @@ class BrandsGrid extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(height: 28.0),
+        const SizedBox(height: 80.0),
       ],
     );
   }
 }
 
 const _brandLogos = [
-  'assets/nike_logo.svg',
-  'assets/nike_lab_logo.jpg',
-  'assets/air_jordan_logo.svg',
-  'assets/nike_logo.svg',
-  'assets/nike_acg_logo.svg',
-  'assets/nike_by_you_logo.svg',
+  'assets/brands/nike_logo.svg',
+  'assets/brands/nike_lab_logo.jpg',
+  'assets/brands/air_jordan_logo.svg',
+  'assets/brands/nike_logo.svg',
+  'assets/brands/nike_acg_logo.svg',
+  'assets/brands/nike_by_you_logo.svg',
 ];

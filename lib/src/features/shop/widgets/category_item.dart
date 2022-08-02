@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../theme/colors.dart';
+
 class CategoryItem extends StatelessWidget {
   const CategoryItem({
     Key? key,
@@ -57,7 +59,7 @@ class CategoryItem extends StatelessWidget {
                   border: Border(
                     bottom: BorderSide(
                       width: 1.0,
-                      color: Colors.grey,
+                      color: lightGrey,
                     ),
                   ),
                 ),

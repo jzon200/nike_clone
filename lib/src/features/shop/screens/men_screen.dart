@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nike_clone/src/features/shop/widgets/brands_grid.dart';
 
 import '../widgets/widgets.dart';
 
@@ -41,6 +40,8 @@ class MenScreen extends StatelessWidget {
           items: _collections,
         ),
         BrandsGrid(),
+        MyInterests(),
+        // TODO: Add Nike Member Services Section
       ],
     );
   }

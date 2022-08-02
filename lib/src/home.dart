@@ -10,14 +10,10 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: _tabs.length,
-      child: Scaffold(
-        appBar: const NikeAppBar(tabs: _tabs),
-        drawer: const NikeDrawer(),
-        body: const ShopScreen(tabs: _tabs),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: const Icon(Icons.add),
-        ),
+      child: const Scaffold(
+        appBar: NikeAppBar(tabs: _tabs),
+        drawer: NikeDrawer(),
+        body: ShopScreen(tabs: _tabs),
       ),
     );
   }
