@@ -41,7 +41,8 @@ class MenScreen extends StatelessWidget {
         ),
         BrandsGrid(),
         MyInterests(),
-        // TODO: Add Nike Member Services Section
+        MemberServices(),
+        FindStore(),
       ],
     );
   }

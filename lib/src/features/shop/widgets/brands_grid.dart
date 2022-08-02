@@ -28,7 +28,7 @@ class BrandsGrid extends StatelessWidget {
                 lightGrey,
                 Colors.transparent,
               ],
-              radius: 0.8,
+              radius: 0.85,
               focal: Alignment.center,
             ),
           ),
@@ -47,9 +47,9 @@ class BrandsGrid extends StatelessWidget {
                     onTap: () {},
                     child: Center(
                       child: assetName.contains('.svg')
-                          ? SvgPicture.asset(
-                              assetName,
-                              height: 44.0,
+                          ? SizedBox(
+                              width: 44.0,
+                              child: SvgPicture.asset(assetName),
                             )
                           : Image.asset(
                               assetName,
@@ -72,7 +72,7 @@ const _brandLogos = [
   'assets/brands/nike_logo.svg',
   'assets/brands/nike_lab_logo.jpg',
   'assets/brands/air_jordan_logo.svg',
-  'assets/brands/nike_logo.svg',
+  'assets/brands/nikesb_logo.svg',
   'assets/brands/nike_acg_logo.svg',
   'assets/brands/nike_by_you_logo.svg',
 ];
