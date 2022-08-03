@@ -10,17 +10,10 @@ class PopularSearches extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
 
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.only(top: 8.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8.0),
-            child: Text(
-              'Popular Searches',
-              style: textTheme.headline6,
-            ),
-          ),
           for (final item in searches)
             ListTile(
               onTap: () {

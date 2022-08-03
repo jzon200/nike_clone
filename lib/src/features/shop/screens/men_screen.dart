@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike_clone/src/features/shop/widgets/section.dart';
 
 import '../widgets/widgets.dart';
 
@@ -9,39 +10,62 @@ class MenScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: const [
-        SectionList(
+        Section(
           title: "This Week's Highlights",
-          items: _highlights,
+          child: SectionList(items: _highlights),
         ),
-        SectionList(
+        Section(
+          title: "Enjoy Extra 30% Off",
+          subtitle: "Use code APP30",
+          actionLabel: 'View All',
+          child: SectionList(items: _highlights),
+        ),
+        Section(
           title: "App Anniversary Drops",
-          subTitle: 'Dropping at 12:00PM Daily',
-          items: _offers,
+          subtitle: "Dropping at 12:00PM Daily",
+          child: SectionList(items: _anniversaryDrops),
         ),
         CategoryList(),
-        SizedBox(height: 24.0),
-        SectionList(
+        Section(
           title: "Find The Right Running Shoes",
-          items: _runningShoes,
+          child: SectionList(items: _runningShoes),
         ),
-        SectionList(
+        Section(
           title: "Shop By Collection",
-          items: _collections,
+          child: SectionList(items: _collections),
         ),
-        SizedBox(height: 24.0),
-        ProductsGrid(productList: _justInItems),
-        PopularSearches(searches: _popularSearches),
-        SectionList(
-          title: "Recommended For You",
-          items: _collections,
+        Section(
+          title: "Just In",
+          padding: EdgeInsets.all(20.0),
+          child: ProductsGrid(productList: _justInItems),
         ),
-        SectionList(
-          title: "Recently Viewed",
-          items: _collections,
+        Section(
+          title: 'Popular Searches',
+          child: PopularSearches(searches: _popularSearches),
         ),
-        BrandsGrid(),
-        MyInterests(),
-        MemberServices(),
+        Section(
+          title: 'Recommended for You',
+          child: SectionList(height: 208, items: _recommendations),
+        ),
+        Section(
+          title: 'Recently Viewed',
+          actionLabel: 'Clear',
+          child: SectionList(height: 224, items: _recommendations),
+        ),
+        Section(
+          title: 'Shop By Brand',
+          padding: EdgeInsets.all(20.0),
+          child: BrandsGrid(),
+        ),
+        Section(
+          title: 'My Interests',
+          actionLabel: 'Add Interest',
+          child: MyInterests(),
+        ),
+        Section(
+          title: 'Nike Member Services',
+          child: MemberServices(),
+        ),
         FindStore(),
       ],
     );
@@ -49,19 +73,82 @@ class MenScreen extends StatelessWidget {
 }
 
 const _highlights = [
-  'Member Days is Coming',
-  'Cop Your Fave 👟 Drop',
-  'Sneakers of the Week',
-  'Air Zoom G.T. Cut 2',
-  'Nike React Pegasus Trail 4',
-  'Nike React Infinity Run Flyknit 3',
-  'Nike Metcon 8',
-  'Nike Waffle One SE',
-  'Air Max Flyknit Racer',
-  'Nike By You',
+  {
+    'title': 'Member Days is Coming',
+    'imageUrl': '',
+  },
+  {
+    'title': 'Cop Your Fave 👟 Drop',
+    'imageUrl': '',
+  },
+  {
+    'title': 'Sneakers of the Week',
+    'imageUrl': '',
+  },
+  {
+    'title': 'Air Zoom G.T. Cut 2',
+    'imageUrl': '',
+  },
+  {
+    'title': 'Nike React Pegasus Trail 4',
+    'imageUrl': '',
+  },
+  {
+    'title': 'Nike React Infinity Run Flyknit 3',
+    'imageUrl': '',
+  },
+  {
+    'title': 'Nike Metcon 8',
+    'imageUrl': '',
+  },
+  {
+    'title': 'Nike Waffle One SE',
+    'imageUrl': '',
+  },
+  {
+    'title': 'Air Max Flyknit Racer',
+    'imageUrl': '',
+  },
+  {
+    'title': 'Nike By You',
+    'imageUrl': '',
+  },
 ];
 
-const _offers = [
+// const _discountOffers = [
+//   {
+//     'name': 'Nike Space Hippie 04',
+//     'previousPrice': 7595,
+//     'discountedPrice': 4559,
+//   },
+//   {
+//     'name': 'Nike Free Metcon 4',
+//     'previousPrice': 6445,
+//     'discountedPrice': 3869,
+//   },
+//   {
+//     'name': 'Nike Dri-FIT Run Division Rise 365',
+//     'previousPrice': 2195,
+//     'discountedPrice': 1759,
+//   },
+//   {
+//     'name': 'Nike Sportswear',
+//     'previousPrice': 7595,
+//     'discountedPrice': 4559,
+//   },
+//   {
+//     'name': 'Nike Sport Clash',
+//     'previousPrice': 1995,
+//     'discountedPrice': 1199,
+//   },
+//   {
+//     'name': 'Nike Air Max 90',
+//     'previousPrice': 7345,
+//     'discountedPrice': 4409,
+//   },
+// ];
+
+const _anniversaryDrops = [
   '02 Aug',
   '03 Aug: Nike by You',
   '04 Aug: The Best of Jordan',
@@ -118,4 +205,31 @@ const _popularSearches = [
   'Air Jordan 1',
   'Air Max',
   'Blazer',
+];
+
+const _recommendations = [
+  {
+    'title': 'NOCTA Hot Step Air Terra',
+    'price': 7795,
+  },
+  {
+    'title': 'Zion 2 PF',
+    'price': 6595,
+  },
+  {
+    'title': 'Nike ZoomX Vaporfly NEXT% 2',
+    'price': 10995,
+  },
+  {
+    'title': 'Noke Waffle One SE',
+    'price': 5295,
+  },
+  {
+    'title': 'Nike Everyday Plus',
+    'price': 495,
+  },
+  {
+    'title': 'Chelsea F.C. 2022/23 Stadium Home',
+    'price': 3595,
+  },
 ];

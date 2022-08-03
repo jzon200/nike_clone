@@ -31,7 +31,10 @@ class _CategoryListState extends State<CategoryList> {
     }).toList();
 
     return Column(
-      children: categoryItems,
+      children: [
+        ...categoryItems,
+        const SizedBox(height: 24.0),
+      ],
     );
   }
 }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
-import '../../../theme/colors.dart';
+import 'product_card.dart';
 
 class ProductsGrid extends StatelessWidget {
   const ProductsGrid({Key? key, required this.productList}) : super(key: key);
@@ -12,7 +11,6 @@ class ProductsGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
     final size = MediaQuery.of(context).size;
-    final formatCurrency = NumberFormat();
 
     /*24 is for notification bar on Android*/
     final itemHeight = (size.height - kToolbarHeight - 24) / 2;
@@ -24,69 +22,20 @@ class ProductsGrid extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 24.0),
-        Padding(
-          padding: const EdgeInsets.only(
-            left: 20.0,
-            bottom: 20.0,
-          ),
-          child: Text(
-            'Just In',
-            style: textTheme.headline6?.copyWith(color: Colors.black),
-          ),
+        const SizedBox(height: 16),
+        GridView.count(
+          crossAxisCount: 3,
+          primary: false,
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          mainAxisSpacing: 16.0,
+          crossAxisSpacing: 4.0,
+          childAspectRatio: aspectRatio,
+          children: [
+            for (final product in productList) ProductCard(product: product),
+          ],
         ),
-        Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            children: [
-              GridView.count(
-                crossAxisCount: 3,
-                primary: false,
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                mainAxisSpacing: 20.0,
-                crossAxisSpacing: 4.0,
-                childAspectRatio: aspectRatio,
-                children: [
-                  for (final item in productList)
-                    InkWell(
-                      onTap: () {},
-                      child: Ink(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              height: 112,
-                              color: lightGrey,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(
-                                vertical: 14.0,
-                              ),
-                              child: Text(
-                                item['name'] as String,
-                                style: textTheme.bodyText1?.copyWith(
-                                  overflow: TextOverflow.ellipsis,
-                                ),
-                                maxLines: 2,
-                              ),
-                            ),
-                            Text(
-                              'PHP${formatCurrency.format(item['price'])}',
-                              style: textTheme.bodyText2?.copyWith(
-                                overflow: TextOverflow.ellipsis,
-                                color: Colors.black54,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                ],
-              ),
-            ],
-          ),
-        ),
+        const SizedBox(height: 16),
         Center(
           child: ElevatedButton(
             onPressed: () {},
