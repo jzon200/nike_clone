@@ -20,52 +20,52 @@ class Section extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
 
-    return Padding(
-      padding: padding,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
+    final titleColumn = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          title,
+          style: textTheme.headline6,
+        ),
+        Visibility(
+          visible: subtitle.isNotEmpty,
+          child: Text(
+            subtitle,
+            style: textTheme.headline6?.copyWith(
+              color: Colors.grey,
+            ),
+          ),
+        )
+      ],
+    );
+
+    final header = actionLabel.isNotEmpty
+        ? Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: textTheme.headline6,
-                  ),
-                  Visibility(
-                    visible: subtitle.isNotEmpty,
-                    child: Text(
-                      subtitle,
-                      style: textTheme.headline6?.copyWith(
-                        color: Colors.grey,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Visibility(
-                visible: actionLabel.isNotEmpty,
-                child: Padding(
-                  padding: const EdgeInsets.only(right: 16.0),
-                  child: TextButton(
-                    onPressed: () {},
-                    style: TextButton.styleFrom(primary: Colors.black),
-                    child: Text(
-                      actionLabel,
-                      style: textTheme.subtitle1?.copyWith(
-                        color: Colors.grey[600],
-                      ),
+              titleColumn,
+              Padding(
+                padding: const EdgeInsets.only(right: 16.0),
+                child: TextButton(
+                  onPressed: () {},
+                  style: TextButton.styleFrom(primary: Colors.black),
+                  child: Text(
+                    actionLabel,
+                    style: textTheme.subtitle1?.copyWith(
+                      color: Colors.grey[600],
                     ),
                   ),
                 ),
               ),
             ],
-          ),
-          child,
-        ],
+          )
+        : titleColumn;
+
+    return Padding(
+      padding: padding,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [header, child],
       ),
     );
   }
