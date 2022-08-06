@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nike_clone/src/features/shop/widgets/section_card.dart';
 
 import '../utils/utils.dart';
+import 'section_card.dart';
 
 class SectionList extends StatelessWidget {
   const SectionList({

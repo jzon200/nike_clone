@@ -17,8 +17,11 @@ class _CategoryListState extends State<CategoryList> {
     final categoryItems = _categories.map((item) {
       final index = _categories.indexOf(item);
       final isExpanded = _expandedItemIndex == index;
+      // final itemKey = GlobalKey();
 
+      // TODO: Scroll to Tapped CategoryItem
       return CategoryItem(
+        // key: itemKey,
         title: item['title'] as String,
         items: item['items'] as List<String>,
         isExpanded: isExpanded,
@@ -26,6 +29,8 @@ class _CategoryListState extends State<CategoryList> {
           setState(() {
             _expandedItemIndex = !isExpanded ? index : null;
           });
+          // Scrollable.ensureVisible(itemKey.currentContext ?? context);
+          // Scrollable.ensureVisible(context);
         },
       );
     }).toList();

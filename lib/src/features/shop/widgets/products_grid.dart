@@ -9,15 +9,12 @@ class ProductsGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
     final size = MediaQuery.of(context).size;
 
     /*24 is for notification bar on Android*/
     final itemHeight = (size.height - kToolbarHeight - 24) / 2;
     final itemWidth = size.width / 2;
     final aspectRatio = itemWidth / itemHeight;
-
-    print(aspectRatio);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
