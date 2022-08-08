@@ -57,6 +57,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/brands/
+    - assets/categories/
     - assets/my_interests/
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -23,6 +23,7 @@ class _CategoryListState extends State<CategoryList> {
       return CategoryItem(
         // key: itemKey,
         title: item['title'] as String,
+        image: item['image'] as String,
         items: item['items'] as List<String>,
         isExpanded: isExpanded,
         onTap: () {
@@ -47,6 +48,7 @@ class _CategoryListState extends State<CategoryList> {
 const _categories = [
   {
     'title': 'New & Featured',
+    'image': 'assets/categories/new_featured.png',
     'items': [
       'New Releases',
       'Available Only in the App',
@@ -60,6 +62,7 @@ const _categories = [
   },
   {
     'title': 'Shoes',
+    'image': 'assets/categories/shoes.png',
     'items': [
       'New Releases',
       'All Shoes',
@@ -73,6 +76,7 @@ const _categories = [
   },
   {
     'title': 'Clothing',
+    'image': 'assets/categories/clothing.png',
     'items': [
       'New Releases',
       'All Clothing',
@@ -86,6 +90,7 @@ const _categories = [
   },
   {
     'title': 'Sale',
+    'image': 'assets/categories/sale.png',
     'items': [
       'Shop All Sale',
       'Shop Sale Shoes',
@@ -95,6 +100,7 @@ const _categories = [
   },
   {
     'title': 'Member Shop',
+    'image': 'assets/categories/member_shop.png',
     'items': [
       'Member Days Is Coming',
       'Shop All Member Exclusives',
