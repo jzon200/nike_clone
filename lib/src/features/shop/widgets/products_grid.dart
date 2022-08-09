@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'product_card.dart';
 
 class ProductsGrid extends StatelessWidget {
-  const ProductsGrid({Key? key, required this.productList}) : super(key: key);
-
-  final List<Map<String, Object>> productList;
+  const ProductsGrid({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +27,7 @@ class ProductsGrid extends StatelessWidget {
           crossAxisSpacing: 4.0,
           childAspectRatio: aspectRatio,
           children: [
-            for (final product in productList) ProductCard(product: product),
+            for (final product in _justInItems) ProductCard(product: product),
           ],
         ),
         const SizedBox(height: 16),
@@ -54,3 +52,30 @@ class ProductsGrid extends StatelessWidget {
     );
   }
 }
+
+const _justInItems = [
+  {
+    'name': 'NOCTA Hot Step Air Terra',
+    'price': 7795,
+  },
+  {
+    'name': 'Zion 2 PF',
+    'price': 6595,
+  },
+  {
+    'name': 'Nike ZoomX Vaporfly NEXT% 2',
+    'price': 10995,
+  },
+  {
+    'name': 'Noke Waffle One SE',
+    'price': 5295,
+  },
+  {
+    'name': 'Nike Everyday Plus',
+    'price': 495,
+  },
+  {
+    'name': 'Chelsea F.C. 2022/23 Stadium Home',
+    'price': 3595,
+  },
+];

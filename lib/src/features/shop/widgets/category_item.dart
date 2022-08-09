@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 
+import '../../../models/models.dart';
 import 'animated_categories.dart';
 
 class CategoryItem extends StatelessWidget {
   const CategoryItem({
     Key? key,
-    required this.items,
-    required this.title,
-    required this.image,
+    required this.category,
     required this.isExpanded,
     required this.onTap,
   }) : super(key: key);
 
-  final String title;
-  final String image;
-  final List<String> items;
+  final ProductCategory category;
   final bool isExpanded;
   final VoidCallback onTap;
 
@@ -31,7 +28,7 @@ class CategoryItem extends StatelessWidget {
             onTap: onTap,
             child: Container(
               padding: const EdgeInsets.only(left: 16.0),
-              decoration: title == 'New & Featured'
+              decoration: category.name == 'New & Featured'
                   ? BoxDecoration(
                       image: DecorationImage(
                         colorFilter: ColorFilter.mode(
@@ -39,7 +36,7 @@ class CategoryItem extends StatelessWidget {
                           BlendMode.srcOver,
                         ),
                         alignment: const Alignment(0, -0.35),
-                        image: AssetImage(image),
+                        image: AssetImage(category.assetName),
                         fit: BoxFit.cover,
                       ),
                     )
@@ -51,28 +48,40 @@ class CategoryItem extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      title,
+                      category.name,
                       style: textTheme.headline6?.copyWith(
                         color: Colors.white,
                       ),
                     ),
                   ),
                   Visibility(
-                    visible: title == 'Clothing',
+                    visible: category.name == 'Clothing',
                     child: Positioned(
                       top: -16,
                       right: 16,
                       child: Image.asset(
-                        image,
+                        category.assetName,
                         scale: 3.25,
                       ),
                     ),
                   ),
                   Visibility(
-                    visible: title != 'New & Featured' && title != 'Clothing',
+                    visible: category.name != 'New & Featured' &&
+                        category.name != 'Clothing',
                     child: Align(
                       alignment: Alignment.centerRight,
-                      child: Image.asset(image),
+                      child: AspectRatio(
+                        aspectRatio: 5 / 3,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              alignment: FractionalOffset.center,
+                              image: AssetImage(category.assetName),
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ],
@@ -84,7 +93,10 @@ class CategoryItem extends StatelessWidget {
           visible: !isExpanded,
           child: const SizedBox(height: 4.0),
         ),
-        AnimatedCategories(items: items, isExpanded: isExpanded)
+        AnimatedCategories(
+          items: category.subcategories,
+          isExpanded: isExpanded,
+        )
       ],
     );
   }

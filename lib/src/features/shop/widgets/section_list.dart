@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../models/models.dart';
 import '../utils/utils.dart';
 import 'section_card.dart';
 
@@ -11,7 +12,7 @@ class SectionList extends StatelessWidget {
   }) : super(key: key);
 
   final List items;
-  final double? height;
+  final double height;
 
   @override
   Widget build(BuildContext context) {
@@ -25,13 +26,27 @@ class SectionList extends StatelessWidget {
         itemCount: items.length,
         itemBuilder: (_, index) {
           final item = items[index];
-          // TODO: To be Simplified in the future
-          final title = (item is Map) ? item['title'] : item;
-          final subtitle = (item is Map) ? getCurrency(item['price']) : '';
+          late String primaryText;
+          String? secondaryText;
+          String? tertiaryText;
+
+          if (item is DiscountedProduct) {
+            primaryText = item.name;
+            secondaryText = getCurrency(item.price);
+            tertiaryText = getCurrency(item.discountedPrice);
+          } else if (item is Product) {
+            primaryText = item.name;
+            secondaryText = getCurrency(item.price);
+          } else if (item is Highlight) {
+            primaryText = item.title;
+          } else {
+            primaryText = item;
+          }
 
           return SectionCard(
-            title: title,
-            subtitle: subtitle,
+            primaryText: primaryText,
+            secondaryText: secondaryText,
+            tertiaryText: tertiaryText,
           );
         },
         separatorBuilder: (_, index) {

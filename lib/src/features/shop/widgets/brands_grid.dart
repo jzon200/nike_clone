@@ -57,7 +57,7 @@ class BrandsGrid extends StatelessWidget {
 
 const _brandLogos = [
   'assets/brands/nike_logo.svg',
-  'assets/brands/nike_lab_logo.jpg',
+  'assets/brands/nike_lab_logo.png',
   'assets/brands/air_jordan_logo.svg',
   'assets/brands/nikesb_logo.svg',
   'assets/brands/nike_acg_logo.svg',

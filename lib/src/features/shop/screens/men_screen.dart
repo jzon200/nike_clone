@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nike_clone/src/features/shop/widgets/section.dart';
 
+import '../../../models/models.dart';
 import '../widgets/widgets.dart';
 
 class MenScreen extends StatelessWidget {
@@ -18,7 +18,7 @@ class MenScreen extends StatelessWidget {
           title: "Enjoy Extra 30% Off",
           subtitle: "Use code APP30",
           actionLabel: 'View All',
-          child: SectionList(items: _highlights),
+          child: SectionList(height: 208, items: _discountOffers),
         ),
         Section(
           title: "App Anniversary Drops",
@@ -28,7 +28,7 @@ class MenScreen extends StatelessWidget {
         CategoryList(),
         Section(
           title: "Find The Right Running Shoes",
-          child: SectionList(items: _runningShoes),
+          child: SectionList(height: 176, items: _runningShoes),
         ),
         Section(
           title: "Shop By Collection",
@@ -37,7 +37,7 @@ class MenScreen extends StatelessWidget {
         Section(
           title: "Just In",
           padding: EdgeInsets.all(20.0),
-          child: ProductsGrid(productList: _justInItems),
+          child: ProductsGrid(),
         ),
         Section(
           title: 'Popular Searches',
@@ -50,7 +50,7 @@ class MenScreen extends StatelessWidget {
         Section(
           title: 'Recently Viewed',
           actionLabel: 'Clear',
-          child: SectionList(height: 224, items: _recommendations),
+          child: SectionList(height: 208, items: _recommendations),
         ),
         Section(
           title: 'Shop By Brand',
@@ -73,80 +73,80 @@ class MenScreen extends StatelessWidget {
 }
 
 const _highlights = [
-  {
-    'title': 'Member Days is Coming',
-    'imageUrl': '',
-  },
-  {
-    'title': 'Cop Your Fave 👟 Drop',
-    'imageUrl': '',
-  },
-  {
-    'title': 'Sneakers of the Week',
-    'imageUrl': '',
-  },
-  {
-    'title': 'Air Zoom G.T. Cut 2',
-    'imageUrl': '',
-  },
-  {
-    'title': 'Nike React Pegasus Trail 4',
-    'imageUrl': '',
-  },
-  {
-    'title': 'Nike React Infinity Run Flyknit 3',
-    'imageUrl': '',
-  },
-  {
-    'title': 'Nike Metcon 8',
-    'imageUrl': '',
-  },
-  {
-    'title': 'Nike Waffle One SE',
-    'imageUrl': '',
-  },
-  {
-    'title': 'Air Max Flyknit Racer',
-    'imageUrl': '',
-  },
-  {
-    'title': 'Nike By You',
-    'imageUrl': '',
-  },
+  Highlight(
+    title: 'Member Days is Coming',
+    imageSrc: '',
+  ),
+  Highlight(
+    title: 'Cop Your Fave 👟 Drop',
+    imageSrc: '',
+  ),
+  Highlight(
+    title: 'Sneakers of the Week',
+    imageSrc: '',
+  ),
+  Highlight(
+    title: 'Air Zoom G.T. Cut 2',
+    imageSrc: '',
+  ),
+  Highlight(
+    title: 'Nike React Pegasus Trail 4',
+    imageSrc: '',
+  ),
+  Highlight(
+    title: 'Nike React Infinity Run Flyknit 3',
+    imageSrc: '',
+  ),
+  Highlight(
+    title: 'Nike Metcon 8',
+    imageSrc: '',
+  ),
+  Highlight(
+    title: 'Nike Waffle One SE',
+    imageSrc: '',
+  ),
+  Highlight(
+    title: 'Air Max Flyknit Racer',
+    imageSrc: '',
+  ),
+  Highlight(
+    title: 'Nike By You',
+    imageSrc: '',
+  ),
 ];
 
-// const _discountOffers = [
-//   {
-//     'name': 'Nike Space Hippie 04',
-//     'previousPrice': 7595,
-//     'discountedPrice': 4559,
-//   },
-//   {
-//     'name': 'Nike Free Metcon 4',
-//     'previousPrice': 6445,
-//     'discountedPrice': 3869,
-//   },
-//   {
-//     'name': 'Nike Dri-FIT Run Division Rise 365',
-//     'previousPrice': 2195,
-//     'discountedPrice': 1759,
-//   },
-//   {
-//     'name': 'Nike Sportswear',
-//     'previousPrice': 7595,
-//     'discountedPrice': 4559,
-//   },
-//   {
-//     'name': 'Nike Sport Clash',
-//     'previousPrice': 1995,
-//     'discountedPrice': 1199,
-//   },
-//   {
-//     'name': 'Nike Air Max 90',
-//     'previousPrice': 7345,
-//     'discountedPrice': 4409,
-//   },
-// ];
+const _discountOffers = [
+  DiscountedProduct(
+    name: 'Nike Space Hippie 04',
+    price: 7595,
+    discountedPrice: 4559,
+  ),
+  DiscountedProduct(
+    name: 'Nike Free Metcon 4',
+    price: 6445,
+    discountedPrice: 3869,
+  ),
+  DiscountedProduct(
+    name: 'Nike Dri-FIT Run Division Rise 365',
+    price: 2195,
+    discountedPrice: 1759,
+  ),
+  DiscountedProduct(
+    name: 'Nike Sportswear',
+    price: 7595,
+    discountedPrice: 4559,
+  ),
+  DiscountedProduct(
+    name: 'Nike Sport Clash',
+    price: 1995,
+    discountedPrice: 1199,
+  ),
+  DiscountedProduct(
+    name: 'Nike Air Max 90',
+    price: 7345,
+    discountedPrice: 4409,
+  ),
+];
 
 const _anniversaryDrops = [
   '02 Aug',
@@ -173,33 +173,6 @@ const _collections = [
   'Nike By You',
 ];
 
-const _justInItems = [
-  {
-    'name': 'NOCTA Hot Step Air Terra',
-    'price': 7795,
-  },
-  {
-    'name': 'Zion 2 PF',
-    'price': 6595,
-  },
-  {
-    'name': 'Nike ZoomX Vaporfly NEXT% 2',
-    'price': 10995,
-  },
-  {
-    'name': 'Noke Waffle One SE',
-    'price': 5295,
-  },
-  {
-    'name': 'Nike Everyday Plus',
-    'price': 495,
-  },
-  {
-    'name': 'Chelsea F.C. 2022/23 Stadium Home',
-    'price': 3595,
-  },
-];
-
 const _popularSearches = [
   'Air Force 1',
   'Air Jordan 1',
@@ -208,28 +181,28 @@ const _popularSearches = [
 ];
 
 const _recommendations = [
-  {
-    'title': 'NOCTA Hot Step Air Terra',
-    'price': 7795,
-  },
-  {
-    'title': 'Zion 2 PF',
-    'price': 6595,
-  },
-  {
-    'title': 'Nike ZoomX Vaporfly NEXT% 2',
-    'price': 10995,
-  },
-  {
-    'title': 'Noke Waffle One SE',
-    'price': 5295,
-  },
-  {
-    'title': 'Nike Everyday Plus',
-    'price': 495,
-  },
-  {
-    'title': 'Chelsea F.C. 2022/23 Stadium Home',
-    'price': 3595,
-  },
+  Product(
+    name: 'NOCTA Hot Step Air Terra',
+    price: 7795,
+  ),
+  Product(
+    name: 'Zion 2 PF',
+    price: 6595,
+  ),
+  Product(
+    name: 'Nike ZoomX Vaporfly NEXT% 2',
+    price: 10995,
+  ),
+  Product(
+    name: 'Nike Waffle One SE',
+    price: 5295,
+  ),
+  Product(
+    name: 'Nike Everyday Plus',
+    price: 495,
+  ),
+  Product(
+    name: 'Chelsea F.C. 2022/23 Stadium Home',
+    price: 3595,
+  ),
 ];

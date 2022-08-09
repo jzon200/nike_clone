@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../models/product_category.dart';
 import 'category_item.dart';
 
 class CategoryList extends StatefulWidget {
@@ -14,17 +15,15 @@ class _CategoryListState extends State<CategoryList> {
 
   @override
   Widget build(BuildContext context) {
-    final categoryItems = _categories.map((item) {
-      final index = _categories.indexOf(item);
+    final categoryItems = _categories.map((category) {
+      final index = _categories.indexOf(category);
       final isExpanded = _expandedItemIndex == index;
       // final itemKey = GlobalKey();
 
       // TODO: Scroll to Tapped CategoryItem
       return CategoryItem(
         // key: itemKey,
-        title: item['title'] as String,
-        image: item['image'] as String,
-        items: item['items'] as List<String>,
+        category: category,
         isExpanded: isExpanded,
         onTap: () {
           setState(() {
@@ -46,10 +45,10 @@ class _CategoryListState extends State<CategoryList> {
 }
 
 const _categories = [
-  {
-    'title': 'New & Featured',
-    'image': 'assets/categories/new_featured.png',
-    'items': [
+  ProductCategory(
+    name: 'New & Featured',
+    assetName: 'assets/categories/new_featured.png',
+    subcategories: [
       'New Releases',
       'Available Only in the App',
       'Air Force 1',
@@ -59,11 +58,11 @@ const _categories = [
       'Top Picks Under 3,500',
       'Last Sizes Available',
     ],
-  },
-  {
-    'title': 'Shoes',
-    'image': 'assets/categories/shoes.png',
-    'items': [
+  ),
+  ProductCategory(
+    name: 'Shoes',
+    assetName: 'assets/categories/shoes.png',
+    subcategories: [
       'New Releases',
       'All Shoes',
       'Lifestyle',
@@ -73,11 +72,11 @@ const _categories = [
       'Football',
       'Gym and Training',
     ],
-  },
-  {
-    'title': 'Clothing',
-    'image': 'assets/categories/clothing.png',
-    'items': [
+  ),
+  ProductCategory(
+    name: 'Clothing',
+    assetName: 'assets/categories/clothing.png',
+    subcategories: [
       'New Releases',
       'All Clothing',
       'Tops and T-Shirts',
@@ -87,25 +86,25 @@ const _categories = [
       'Pants and Leggings',
       'Tracksuits',
     ],
-  },
-  {
-    'title': 'Sale',
-    'image': 'assets/categories/sale.png',
-    'items': [
+  ),
+  ProductCategory(
+    name: 'Sale',
+    assetName: 'assets/categories/sale.png',
+    subcategories: [
       'Shop All Sale',
       'Shop Sale Shoes',
       'Shop Sale Clothing',
       'Shop Sale Accessories and Equipment',
     ],
-  },
-  {
-    'title': 'Member Shop',
-    'image': 'assets/categories/member_shop.png',
-    'items': [
+  ),
+  ProductCategory(
+    name: 'Member Shop',
+    assetName: 'assets/categories/member_shop.png',
+    subcategories: [
       'Member Days Is Coming',
       'Shop All Member Exclusives',
       'New and Upcoming Drops',
       'Nike Membership Benefits',
     ],
-  },
+  ),
 ];

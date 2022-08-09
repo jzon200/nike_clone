@@ -5,14 +5,16 @@ import '../../../theme/colors.dart';
 class SectionCard extends StatelessWidget {
   const SectionCard({
     Key? key,
-    required this.title,
-    this.subtitle = '',
+    required this.primaryText,
+    this.secondaryText,
+    this.tertiaryText,
     this.width = 144.0,
     this.height = 144.0,
   }) : super(key: key);
 
-  final String title;
-  final String subtitle;
+  final String primaryText;
+  final String? secondaryText;
+  final String? tertiaryText;
   final double width;
   final double height;
 
@@ -36,24 +38,46 @@ class SectionCard extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 8.0),
             ),
             Text(
-              title,
+              primaryText,
               style: textTheme.subtitle2,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),
             Visibility(
-              visible: subtitle.isNotEmpty,
+              visible: secondaryText != null,
               child: const SizedBox(height: 8.0),
             ),
             Visibility(
-              visible: subtitle.isNotEmpty,
+              visible: secondaryText != null && tertiaryText == null,
               child: Text(
-                subtitle,
+                secondaryText ?? '',
                 style: textTheme.bodyText2?.copyWith(
                   color: Colors.grey,
                 ),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
+              ),
+            ),
+            Visibility(
+              visible: tertiaryText != null,
+              child: RichText(
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                text: TextSpan(
+                  text: '$secondaryText\t\t\t',
+                  style: textTheme.bodyText2?.copyWith(
+                    color: Colors.grey[600],
+                  ),
+                  children: [
+                    TextSpan(
+                      text: tertiaryText,
+                      style: textTheme.bodyText2?.copyWith(
+                        color: Colors.grey,
+                        decoration: TextDecoration.lineThrough,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ],
