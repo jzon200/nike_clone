@@ -4,8 +4,8 @@ import '../../../models/models.dart';
 import 'product_thumbnail.dart';
 import 'widgets.dart';
 
-class SectionList extends StatelessWidget {
-  const SectionList({
+class ThumbnailListView extends StatelessWidget {
+  const ThumbnailListView({
     Key? key,
     required this.items,
     this.size = 192,

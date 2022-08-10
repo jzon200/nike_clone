@@ -22,25 +22,25 @@ class MenScreen extends StatelessWidget {
           children: [
             Section(
               title: "This Week's Highlights",
-              child: SectionList(
+              child: ThumbnailListView(
                 items: snapshot.data?.weeksHiglights ?? [],
               ),
             ),
             const CategoryList(),
             const Section(
               title: "Find The Right Running Shoes",
-              child: SectionList(size: 176, items: _runningShoes),
+              child: ThumbnailListView(size: 176, items: _runningShoes),
             ),
             Section(
               title: "Shop By Collection",
-              child: SectionList(
+              child: ThumbnailListView(
                 items: snapshot.data?.collections ?? [],
               ),
             ),
             Section(
               title: "Just In",
               padding: const EdgeInsets.all(20.0),
-              child: ProductsGrid(products: snapshot.data?.products ?? []),
+              child: NewestProducts(products: snapshot.data?.products ?? []),
             ),
             const Section(
               title: 'Popular Searches',
@@ -48,12 +48,12 @@ class MenScreen extends StatelessWidget {
             ),
             const Section(
               title: 'Recommended for You',
-              child: SectionList(size: 208, items: _recommendations),
+              child: ThumbnailListView(size: 208, items: _recommendations),
             ),
             const Section(
               title: 'Recently Viewed',
               actionLabel: 'Clear',
-              child: SectionList(size: 208, items: _recommendations),
+              child: ThumbnailListView(size: 208, items: _recommendations),
             ),
             const Section(
               title: 'Shop By Brand',

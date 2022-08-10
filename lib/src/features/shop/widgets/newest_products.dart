@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../models/models.dart';
 import 'product_thumbnail.dart';
 
-class ProductsGrid extends StatelessWidget {
-  const ProductsGrid({Key? key, required this.products}) : super(key: key);
+class NewestProducts extends StatelessWidget {
+  const NewestProducts({Key? key, required this.products}) : super(key: key);
 
   final List<Product> products;
 
