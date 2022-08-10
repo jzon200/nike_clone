@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/models.dart';
-import '../utils/utils.dart';
-import 'section_card.dart';
+import 'product_thumbnail.dart';
+import 'widgets.dart';
 
 class SectionList extends StatelessWidget {
   const SectionList({
     Key? key,
     required this.items,
-    this.height = 192,
+    this.size = 192,
   }) : super(key: key);
 
   final List items;
-  final double height;
+  final double size;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height,
+      height: size,
       margin: const EdgeInsets.symmetric(vertical: 16.0),
       child: ListView.separated(
         primary: false,
@@ -26,28 +26,12 @@ class SectionList extends StatelessWidget {
         itemCount: items.length,
         itemBuilder: (_, index) {
           final item = items[index];
-          late String primaryText;
-          String? secondaryText;
-          String? tertiaryText;
 
-          if (item is DiscountedProduct) {
-            primaryText = item.name;
-            secondaryText = getCurrency(item.price);
-            tertiaryText = getCurrency(item.discountedPrice);
-          } else if (item is Product) {
-            primaryText = item.name;
-            secondaryText = getCurrency(item.price);
-          } else if (item is Highlight) {
-            primaryText = item.title;
-          } else {
-            primaryText = item;
-          }
+          final thumbnail = item is Product
+              ? ProductThumbnail(product: item)
+              : SimpleThumbnail(data: item);
 
-          return SectionCard(
-            primaryText: primaryText,
-            secondaryText: secondaryText,
-            tertiaryText: tertiaryText,
-          );
+          return thumbnail;
         },
         separatorBuilder: (_, index) {
           return const SizedBox(width: 4.0);

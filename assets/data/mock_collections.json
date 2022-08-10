@@ -1,0 +1,46 @@
+{
+  "men": [
+    {
+      "title": "Sandals and Slides",
+      "imageSrc": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/48e6eb50-1d54-43f4-8ef3-471a2d94b5c6/victori-one-slide-sRBzK2.png"
+    },
+    {
+      "title": "Pegasus",
+      "imageSrc": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/cf6f0a96-eaf7-4f22-842f-bffe85e86023/air-zoom-pegasus-39-road-running-shoes-kmZSD6.png"
+    },
+    {
+      "title": "Accessories & Equipment",
+      "imageSrc": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/13cb387d-35cf-49dc-84ec-78432737b2d4/brasilia-printed-training-gymsack-PqlWpN.png"
+    },
+    {
+      "title": "Air Force 1",
+      "imageSrc": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a0a300da-2e16-4483-ba64-9815cf0598ac/air-force-1-07-shoe-WrLlWX.png"
+    },
+    {
+      "title": "Nike By You",
+      "imageSrc": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5f2f78e8-6514-4ec2-8962-274f0065ae18/custom-nike-dunk-unlocked-by-you.png"
+    },
+    {
+      "title": "Basketball",
+      "imageSrc": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a7d2960d-d52b-4d4b-b0e4-e7bfc54189bf/lebron-19-basketball-shoes-pbfCF3.png"
+    },
+    {
+      "title": "Jordan",
+      "imageSrc": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0de249df-6c04-45e5-92bc-5474a9850530/air-jordan-1-mid-se-shoes-hHltxp.png"
+    },
+    {
+      "title": "Running Gears",
+      "imageSrc": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9c55c1e3-de6a-45d4-ad8f-7f9e0810458c/dri-fit-dye-training-tank-dXPMsF.png"
+    },
+    {
+      "title": "Nike Golf",
+      "imageSrc": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f3af33d3-0742-49a3-87bb-c5bd771d611b/dri-fit-golf-shorts-QNrCtG.png"
+    },
+    {
+      "title": "Sustainable Materials",
+      "imageSrc": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/21d42511-813d-45bf-afd4-45a6a37f9e7e/brasilia-9-5-training-duffel-bag-CjPRDM.png"
+    }
+  ],
+  "women": [],
+  "kids": []
+}

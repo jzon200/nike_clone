@@ -1,8 +1,6 @@
 import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:flutter/material.dart';
 
-import '../../theme/colors.dart';
-
 class NikeDrawer extends StatelessWidget {
   const NikeDrawer({Key? key}) : super(key: key);
 

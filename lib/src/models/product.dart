@@ -20,4 +20,32 @@ class Product {
     this.sizes,
     this.isFavorited = false,
   });
+
+  Map<String, dynamic> toJson() {
+    return {
+      'name': name,
+      'price': price,
+      'description': description,
+      'category': category,
+      'style': style,
+      'country': country,
+      'images': images,
+      'sizes': sizes,
+      'isFavorited': isFavorited,
+    };
+  }
+
+  factory Product.fromJson(Map<String, dynamic> json) {
+    return Product(
+      name: json['name'] ?? '',
+      price: json['price'] ?? 0,
+      description: json['description'],
+      category: json['category'],
+      style: json['style'],
+      country: json['country'],
+      images: List<String>.from(json['images']),
+      sizes: List<String>.from(json['sizes']),
+      isFavorited: json['isFavorited'] ?? false,
+    );
+  }
 }

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'product_card.dart';
+import '../../../models/models.dart';
+import 'product_thumbnail.dart';
 
 class ProductsGrid extends StatelessWidget {
-  const ProductsGrid({Key? key}) : super(key: key);
+  const ProductsGrid({Key? key, required this.products}) : super(key: key);
+
+  final List<Product> products;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +30,7 @@ class ProductsGrid extends StatelessWidget {
           crossAxisSpacing: 4.0,
           childAspectRatio: aspectRatio,
           children: [
-            for (final product in _justInItems) ProductCard(product: product),
+            for (final product in products) ProductThumbnail(product: product),
           ],
         ),
         const SizedBox(height: 16),

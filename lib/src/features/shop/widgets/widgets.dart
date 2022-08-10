@@ -5,6 +5,6 @@ export 'member_services.dart';
 export 'my_interests.dart';
 export 'popular_searches.dart';
 export 'products_grid.dart';
-export 'products_list.dart';
 export 'section.dart';
 export 'section_list.dart';
+export 'simple_thumbnail.dart';

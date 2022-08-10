@@ -1,0 +1,209 @@
+{
+  "highlights": {
+    "men": [
+      {
+        "title": "Nike ZoomX Zegama",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/w_345,c_limit/c08605bc-4d5e-417e-b263-8ae6a2a3e976/men-s-shoes-clothing-accessories.jpg"
+      },
+      {
+        "title": "Air ZoomX Alphafly",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/33a9fbbc-b58e-4775-a8ca-32c898a199e2/nike-just-do-it.png"
+      },
+      {
+        "title": "Sneakers of the Week",
+        "imageSrc": "https://static.nike.com/a/images/w_960,c_limit,f_auto/d2f806f6-ea5e-4496-99d4-14f39a5f0324/the-drop-off-air-force-1-color-of-the-month-with-sonaone.jpg"
+      },
+      {
+        "title": "Go Outside Together",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_500,c_limit/b9853d35-80bf-4899-8323-2b1ad424758e/nike-just-do-it.png"
+      },
+      {
+        "title": "Camo Pack",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_500,c_limit/817f042e-0b47-41bb-ab48-43e09b8f7b4b/nike-just-do-it.png"
+      },
+      {
+        "title": "Fast is In The Air",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_328,c_limit/41b45446-22bb-4670-83e9-ddb79d9f7b31/men-s-shoes-clothing-accessories.jpg"
+      },
+      {
+        "title": "Nike React Infinity Run Flyknit 3",
+        "imageSrc": "https://static.nike.com/a/images/w_1536,c_limit/6f757c70-0d43-4676-a06d-47f36b698e78/image.jpg"
+      },
+      {
+        "title": "Nike Waffle One SE",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_328,c_limit/61b23d78-dee3-41f2-a564-ca12e9a2a0ae/nike-kids.png"
+      },
+      {
+        "title": "Newest Styles of the Season",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_500,c_limit/3c4f4eea-efc6-4f77-8a61-ccbb4210f4ca/nike-just-do-it.png"
+      },
+      {
+        "title": "Nike By You",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_384,c_limit/2af56a34-7459-48de-82cf-60a848ff063d/nike-just-do-it.png"
+      }
+    ],
+    "women": [],
+    "kids": []
+  },
+  "collections": {
+    "men": [
+      {
+        "title": "Sandals and Slides",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/w_345,c_limit/c08605bc-4d5e-417e-b263-8ae6a2a3e976/men-s-shoes-clothing-accessories.jpg"
+      },
+      {
+        "title": "Pegasus",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/33a9fbbc-b58e-4775-a8ca-32c898a199e2/nike-just-do-it.png"
+      },
+      {
+        "title": "Accessories & Equipment",
+        "imageSrc": "https://static.nike.com/a/images/w_960,c_limit,f_auto/d2f806f6-ea5e-4496-99d4-14f39a5f0324/the-drop-off-air-force-1-color-of-the-month-with-sonaone.jpg"
+      },
+      {
+        "title": "Air Force 1",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_500,c_limit/b9853d35-80bf-4899-8323-2b1ad424758e/nike-just-do-it.png"
+      },
+      {
+        "title": "Nike By You",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_500,c_limit/817f042e-0b47-41bb-ab48-43e09b8f7b4b/nike-just-do-it.png"
+      },
+      {
+        "title": "Basketball",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_328,c_limit/41b45446-22bb-4670-83e9-ddb79d9f7b31/men-s-shoes-clothing-accessories.jpg"
+      },
+      {
+        "title": "Jordan",
+        "imageSrc": "https://static.nike.com/a/images/w_1536,c_limit/6f757c70-0d43-4676-a06d-47f36b698e78/image.jpg"
+      },
+      {
+        "title": "Running Gears",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_328,c_limit/61b23d78-dee3-41f2-a564-ca12e9a2a0ae/nike-kids.png"
+      },
+      {
+        "title": "Nike Golf",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_500,c_limit/3c4f4eea-efc6-4f77-8a61-ccbb4210f4ca/nike-just-do-it.png"
+      },
+      {
+        "title": "Sustainable Materials",
+        "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_384,c_limit/2af56a34-7459-48de-82cf-60a848ff063d/nike-just-do-it.png"
+      }
+    ],
+    "women": [],
+    "kids": []
+  },
+  "newestProducts": {
+    "men": [
+      {
+        "name": "Air Jordan 5 Retro Low PSG",
+        "price": 10895,
+        "images": [
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/79a016d7-a1dc-4720-83a9-e829ce44eee5/air-jordan-5-retro-low-psg-shoes-bpsqMw.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c9a853d1-9f4c-4d69-9d0d-2d7bb885f5cf/air-jordan-5-retro-low-psg-shoes-bpsqMw.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0308d452-8201-4f1e-9044-4e60bc4995c7/air-jordan-5-retro-low-psg-shoes-bpsqMw.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/608d1272-75bd-4418-b56d-7f6e5dabe031/air-jordan-5-retro-low-psg-shoes-bpsqMw.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c57e880f-e7aa-47b6-b7e4-97be9fe234cb/air-jordan-5-retro-low-psg-shoes-bpsqMw.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/55c063d1-be3e-4ce7-80c3-29fe9268886a/air-jordan-5-retro-low-psg-shoes-bpsqMw.png"
+        ],
+        "category": "Men's Shoes",
+        "description": "Jordan and Paris Saint-Germain come together again, this time with an update to the AJ5. This low-top pair looks fresh while featuring the best elements from the original, like lace toggles, rich leather and the iconic WWII Mustang fighter plane-inspired graphic. The stamped PSG logo on the heel subtly reps your favourite club.",
+        "sizes": ["US 7", "US 7.5", "US 8", "US 8.5", "US 9", "US 9.5"],
+        "colours": "Pumice/Black/Plum Eclipse/Game Royal",
+        "style": "DX6325-204",
+        "country": null
+      },
+      {
+        "name": "Paris Saint-Germain 2022/23 Match Away",
+        "price": 6495,
+        "images": [
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/37c5247e-25fd-4fe8-b7df-c963261f3c2b/paris-saint-germain-2022-23-match-away-dri-fit-adv-football-shirt-53kMVM.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/bf2ab294-33ea-4a6b-a562-50ab310455b5/paris-saint-germain-2022-23-match-away-dri-fit-adv-football-shirt-53kMVM.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/364dbc1e-5321-4780-a4c9-6844c0dc7b1a/paris-saint-germain-2022-23-match-away-dri-fit-adv-football-shirt-53kMVM.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/81f51c9b-da7c-40da-9bdd-a6c4dc22ef99/paris-saint-germain-2022-23-match-away-dri-fit-adv-football-shirt-53kMVM.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/ae04cb4e-a4aa-4e67-9dde-d6fb9ea5bd44/paris-saint-germain-2022-23-match-away-dri-fit-adv-football-shirt-53kMVM.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/ccebe88d-a91c-4eb3-80a7-9408f10681a7/paris-saint-germain-2022-23-match-away-dri-fit-adv-football-shirt-53kMVM.png"
+        ],
+        "category": "Men's Nike Dri-FIT ADV Football Shirt",
+        "description": "Like other shirts from our Match collection, this one pairs authentic design details with lightweight, quick-drying fabric to help keep the world's biggest football stars cool and comfortable on the pitch. This product is made from 100% recycled polyester fibres.",
+        "sizes": ["US S", "US M", "US 8", "US L", "US XL", "US 2XL"],
+        "colours": "Light Smoke Grey/Black/Black",
+        "style": " DJ7648-078",
+        "country": null
+      },
+      {
+        "name": "Giannis",
+        "price": 4295,
+        "images": [
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d4afa40b-0375-4da9-9394-ec8624adfa76/giannis-backpack-QlP8JM.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/7e8b34fe-4164-4b96-a43d-c0dd5a61b2ba/giannis-backpack-QlP8JM.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9610020c-e5aa-4c19-90a9-5a0f3af3ba5a/giannis-backpack-QlP8JM.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/77b8480f-5bca-4a5e-b056-d1cdf0329598/giannis-backpack-QlP8JM.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c895d88a-3a31-45c3-a9b7-6de943dfce1f/giannis-backpack-QlP8JM.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2aadb3c6-54b0-4c12-8ca5-94d44c1f8dc3/giannis-backpack-QlP8JM.png"
+        ],
+        "category": "Backpack (29L)",
+        "description": "It's easy to feel like a champ with this backpack. Quick-access zip compartments are combined with helpful details like gear loops to make every day an all-star day. Since we're not all over 2 metres tall like the Freak, the shoulder and sternum straps adjust to help distribute your load and make carrying more comfortable. Topping it off, Greek art-inspired details give expression to Giannis's heritage and unique basketball background.",
+        "sizes": ["ONE SIZE"],
+        "colours": "Pumice/Black/Plum Eclipse/Game Royal",
+        "style": " DQ5241-010",
+        "country": null
+      },
+      {
+        "name": "Nike Dri-FIT Giannis Heritage86",
+        "price": 1295,
+        "images": [
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/c50db2cf-a74d-4527-8b33-37e5ca9434e4/dri-fit-giannis-heritage86-basketball-cap-dN9WQz.png",
+          "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5,q_80/aa43f1f0-55d5-404e-ac09-dfa69da05dc2/dri-fit-giannis-heritage86-basketball-cap-dN9WQz.png"
+        ],
+        "category": "Basketball Cap",
+        "description": "Fans who love Giannis for his incredible game can't get enough of his freaky signature style. The Giannis Heritage86 \"Freak\" Cap puts the sensational Swoosh front and centre. It's made from durable twill with an unstructured crown and a pre-curved bill.",
+        "sizes": ["ONE SIZE"],
+        "colours": "Light Bone/Yellow Strike",
+        "style": "DV2982-072",
+        "country": null
+      },
+      {
+        "name": "Giannis",
+        "price": 3795,
+        "images": [
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/7a09ae35-7abf-4d55-9dcc-8633dec799a3/giannis-lightweight-basketball-trousers-N6Zb7X.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/cd6cfe6f-29c1-4d5f-a442-df08bc8adb52/giannis-lightweight-basketball-trousers-N6Zb7X.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fcf8515d-6b2a-4c72-93d0-ba6c8358732d/giannis-lightweight-basketball-trousers-N6Zb7X.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f734b2ed-c252-48f8-890c-efc141843c7e/giannis-lightweight-basketball-trousers-N6Zb7X.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/2060d58c-208a-4127-8fde-8a45033ce860/giannis-lightweight-basketball-trousers-N6Zb7X.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8324b7f5-b997-4424-939e-6b33eab3900b/giannis-lightweight-basketball-trousers-N6Zb7X.png"
+        ],
+        "category": "Men's Lightweight Basketball Trousers",
+        "description": "He's a freak of nature, a champion and power to behold on the court. Celebrate those qualities of Giannis by suiting up in these lightweight trousers. We made these with soft fleece so you stay comfortable beyond the court. Plus, they have an all-over, embossed graphic celebrating the MVP.",
+        "sizes": ["S", "M", "L", "XL", "2Xl"],
+        "colours": "Black/Sail/Moon Fossil/Sail",
+        "style": "DQ5665-010",
+        "country": null
+      },
+      {
+        "name": "Nike Phantom GT2 Academy TF",
+        "price": 4495,
+        "images": [
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a15cb879-2035-4882-9524-4f0540e7aa5d/phantom-gt2-academy-tf-football-shoes-nGfq8s.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/b48b1667-d45b-42cb-b7b1-17c31047106a/phantom-gt2-academy-tf-football-shoes-nGfq8s.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/4da041ca-e08f-47fc-bad9-e4d9b9960518/phantom-gt2-academy-tf-football-shoes-nGfq8s.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/1ffb5544-28e7-4a07-a51a-8caaea0af501/phantom-gt2-academy-tf-football-shoes-nGfq8s.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/aea81902-4751-4d8f-93c5-903d31b79e52/phantom-gt2-academy-tf-football-shoes-nGfq8s.png",
+          "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5ed7a2ce-5d0e-49b7-a544-b335229b3f4a/phantom-gt2-academy-tf-football-shoes-nGfq8s.png"
+        ],
+        "category": "Men's Shoes",
+        "description": "Building on the Phantom GT, the Nike Phantom GT2 TF has an updated design and patterning that are engineered to help you place your shots with pinpoint accuracy. Off-centre lacing provides a clean strike zone to help you dribble, pass and score with precision.",
+        "sizes": [
+          "US M 7 / W 8.5",
+          "US M 7.5 / W 9",
+          "US M 8 / W 9.5",
+          "US M 8.5 / W 10",
+          "US M 9 / W 10.5",
+          "US M 9.5 / W 11"
+        ],
+        "colours": "Glacier Ice/Yellow Strike/Sunset Glow/Black",
+        "style": "DC0803-407",
+        "country": null
+      }
+    ]
+  }
+}

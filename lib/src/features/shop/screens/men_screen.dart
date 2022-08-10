@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/models.dart';
+import '../api/mock_nike_service.dart';
 import '../widgets/widgets.dart';
 
 class MenScreen extends StatelessWidget {
@@ -8,108 +9,112 @@ class MenScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: const [
-        Section(
-          title: "This Week's Highlights",
-          child: SectionList(items: _highlights),
-        ),
-        Section(
-          title: "Enjoy Extra 30% Off",
-          subtitle: "Use code APP30",
-          actionLabel: 'View All',
-          child: SectionList(height: 208, items: _discountOffers),
-        ),
-        Section(
-          title: "App Anniversary Drops",
-          subtitle: "Dropping at 12:00PM Daily",
-          child: SectionList(items: _anniversaryDrops),
-        ),
-        CategoryList(),
-        Section(
-          title: "Find The Right Running Shoes",
-          child: SectionList(height: 176, items: _runningShoes),
-        ),
-        Section(
-          title: "Shop By Collection",
-          child: SectionList(items: _collections),
-        ),
-        Section(
-          title: "Just In",
-          padding: EdgeInsets.all(20.0),
-          child: ProductsGrid(),
-        ),
-        Section(
-          title: 'Popular Searches',
-          child: PopularSearches(searches: _popularSearches),
-        ),
-        Section(
-          title: 'Recommended for You',
-          child: SectionList(height: 208, items: _recommendations),
-        ),
-        Section(
-          title: 'Recently Viewed',
-          actionLabel: 'Clear',
-          child: SectionList(height: 208, items: _recommendations),
-        ),
-        Section(
-          title: 'Shop By Brand',
-          padding: EdgeInsets.all(20.0),
-          child: BrandsGrid(),
-        ),
-        Section(
-          title: 'My Interests',
-          actionLabel: 'Add Interest',
-          child: MyInterests(),
-        ),
-        Section(
-          title: 'Nike Member Services',
-          child: MemberServices(),
-        ),
-        FindStore(),
-      ],
+    return FutureBuilder(
+      future: MockNikeService.getShopData('men'),
+      builder: (context, AsyncSnapshot<ShopData> snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Center(
+            child: CircularProgressIndicator(color: Colors.black),
+          );
+        }
+
+        return ListView(
+          children: [
+            Section(
+              title: "This Week's Highlights",
+              child: SectionList(
+                items: snapshot.data?.weeksHiglights ?? [],
+              ),
+            ),
+            const CategoryList(),
+            const Section(
+              title: "Find The Right Running Shoes",
+              child: SectionList(size: 176, items: _runningShoes),
+            ),
+            Section(
+              title: "Shop By Collection",
+              child: SectionList(
+                items: snapshot.data?.collections ?? [],
+              ),
+            ),
+            Section(
+              title: "Just In",
+              padding: const EdgeInsets.all(20.0),
+              child: ProductsGrid(products: snapshot.data?.products ?? []),
+            ),
+            const Section(
+              title: 'Popular Searches',
+              child: PopularSearches(searches: _popularSearches),
+            ),
+            const Section(
+              title: 'Recommended for You',
+              child: SectionList(size: 208, items: _recommendations),
+            ),
+            const Section(
+              title: 'Recently Viewed',
+              actionLabel: 'Clear',
+              child: SectionList(size: 208, items: _recommendations),
+            ),
+            const Section(
+              title: 'Shop By Brand',
+              padding: EdgeInsets.all(20.0),
+              child: BrandsGrid(),
+            ),
+            const Section(
+              title: 'My Interests',
+              actionLabel: 'Add Interest',
+              child: MyInterests(),
+            ),
+            const Section(
+              title: 'Nike Member Services',
+              child: MemberServices(),
+            ),
+            const FindStore(),
+          ],
+        );
+      },
     );
   }
 }
 
 const _highlights = [
-  Highlight(
+  Thumbnail(
     title: 'Member Days is Coming',
     imageSrc: '',
   ),
-  Highlight(
+  Thumbnail(
     title: 'Cop Your Fave 👟 Drop',
     imageSrc: '',
   ),
-  Highlight(
+  Thumbnail(
     title: 'Sneakers of the Week',
     imageSrc: '',
   ),
-  Highlight(
+  Thumbnail(
     title: 'Air Zoom G.T. Cut 2',
     imageSrc: '',
   ),
-  Highlight(
+  Thumbnail(
     title: 'Nike React Pegasus Trail 4',
     imageSrc: '',
   ),
-  Highlight(
+  Thumbnail(
     title: 'Nike React Infinity Run Flyknit 3',
     imageSrc: '',
   ),
-  Highlight(
+  Thumbnail(
     title: 'Nike Metcon 8',
     imageSrc: '',
   ),
-  Highlight(
+  Thumbnail(
     title: 'Nike Waffle One SE',
     imageSrc: '',
   ),
-  Highlight(
+  Thumbnail(
     title: 'Air Max Flyknit Racer',
     imageSrc: '',
   ),
-  Highlight(
+  Thumbnail(
     title: 'Nike By You',
     imageSrc: '',
   ),
@@ -148,29 +153,11 @@ const _discountOffers = [
   ),
 ];
 
-const _anniversaryDrops = [
-  '02 Aug',
-  '03 Aug: Nike by You',
-  '04 Aug: The Best of Jordan',
-  '05 Aug: Sneaker of the Week',
-  '06 Aug',
-  '07 Aug',
-  'Show All',
-];
-
 const _runningShoes = [
-  'The On-The-Goer',
-  'The Jogger',
-  'The Runner',
-  'The Racer',
-];
-
-const _collections = [
-  'Sandals and Slides',
-  'Pegasus',
-  'Accesories & Equipment',
-  'Air Force 1',
-  'Nike By You',
+  Thumbnail(title: 'The On-The-Goer'),
+  Thumbnail(title: 'The Jogger'),
+  Thumbnail(title: 'The Runner'),
+  Thumbnail(title: 'The Runner'),
 ];
 
 const _popularSearches = [

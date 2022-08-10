@@ -1,0 +1,46 @@
+{
+  "men": [
+    {
+      "title": "Nike ZoomX Zegama",
+      "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/w_345,c_limit/c08605bc-4d5e-417e-b263-8ae6a2a3e976/men-s-shoes-clothing-accessories.jpg"
+    },
+    {
+      "title": "Air ZoomX Alphafly",
+      "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/33a9fbbc-b58e-4775-a8ca-32c898a199e2/nike-just-do-it.png"
+    },
+    {
+      "title": "Sneakers of the Week",
+      "imageSrc": "https://static.nike.com/a/images/w_960,c_limit,f_auto/d2f806f6-ea5e-4496-99d4-14f39a5f0324/the-drop-off-air-force-1-color-of-the-month-with-sonaone.jpg"
+    },
+    {
+      "title": "Go Outside Together",
+      "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_500,c_limit/b9853d35-80bf-4899-8323-2b1ad424758e/nike-just-do-it.png"
+    },
+    {
+      "title": "Camo Pack",
+      "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_500,c_limit/817f042e-0b47-41bb-ab48-43e09b8f7b4b/nike-just-do-it.png"
+    },
+    {
+      "title": "Fast is In The Air",
+      "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_328,c_limit/41b45446-22bb-4670-83e9-ddb79d9f7b31/men-s-shoes-clothing-accessories.jpg"
+    },
+    {
+      "title": "Nike React Infinity Run Flyknit 3",
+      "imageSrc": "https://static.nike.com/a/images/w_1536,c_limit/6f757c70-0d43-4676-a06d-47f36b698e78/image.jpg"
+    },
+    {
+      "title": "Nike Waffle One SE",
+      "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_328,c_limit/61b23d78-dee3-41f2-a564-ca12e9a2a0ae/nike-kids.png"
+    },
+    {
+      "title": "Newest Styles of the Season",
+      "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_500,c_limit/3c4f4eea-efc6-4f77-8a61-ccbb4210f4ca/nike-just-do-it.png"
+    },
+    {
+      "title": "Nike By You",
+      "imageSrc": "https://static.nike.com/a/images/f_auto/dpr_2.8,cs_srgb/h_384,c_limit/2af56a34-7459-48de-82cf-60a848ff063d/nike-just-do-it.png"
+    }
+  ],
+  "women": [],
+  "kids": []
+}
