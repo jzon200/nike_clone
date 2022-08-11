@@ -1,5 +1,6 @@
 export 'brands_grid.dart';
 export 'category_list.dart';
+export 'custom_network_image.dart';
 export 'find_store.dart';
 export 'member_services.dart';
 export 'my_interests.dart';

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:transparent_image/transparent_image.dart';
 
 import '../../../models/thumbnail.dart';
 import '../../../theme/colors.dart';
+import 'widgets.dart';
 
 class SimpleThumbnail extends StatelessWidget {
   const SimpleThumbnail({
@@ -29,12 +29,9 @@ class SimpleThumbnail extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             data.imageSrc != null
-                ? FadeInImage.memoryNetwork(
-                    placeholder: kTransparentImage,
-                    image: data.imageSrc!,
-                    width: size,
-                    fit: BoxFit.cover,
-                    height: size,
+                ? CustomNetworkImage(
+                    imageSrc: data.imageSrc!,
+                    size: size,
                   )
                 : Container(
                     height: size,

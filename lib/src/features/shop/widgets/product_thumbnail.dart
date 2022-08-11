@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:transparent_image/transparent_image.dart';
 
 import '../../../models/product.dart';
 import '../../../theme/colors.dart';
 import '../utils/utils.dart';
+import 'widgets.dart';
 
 class ProductThumbnail extends StatelessWidget {
   const ProductThumbnail({
@@ -30,12 +30,9 @@ class ProductThumbnail extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             product.images != null
-                ? FadeInImage.memoryNetwork(
-                    placeholder: kTransparentImage,
-                    image: product.images!.first,
-                    width: size,
-                    height: size,
-                    fit: BoxFit.cover,
+                ? CustomNetworkImage(
+                    imageSrc: product.images!.first,
+                    size: size,
                   )
                 : Container(
                     height: size,
