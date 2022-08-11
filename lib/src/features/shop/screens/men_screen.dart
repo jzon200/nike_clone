@@ -46,14 +46,20 @@ class MenScreen extends StatelessWidget {
               title: 'Popular Searches',
               child: PopularSearches(searches: _popularSearches),
             ),
-            const Section(
+            Section(
               title: 'Recommended for You',
-              child: ThumbnailListView(size: 208, items: _recommendations),
+              child: ThumbnailListView(
+                size: 208,
+                items: snapshot.data?.recommendations ?? [],
+              ),
             ),
-            const Section(
+            Section(
               title: 'Recently Viewed',
               actionLabel: 'Clear',
-              child: ThumbnailListView(size: 208, items: _recommendations),
+              child: ThumbnailListView(
+                size: 208,
+                items: snapshot.data?.recommendations ?? [],
+              ),
             ),
             const Section(
               title: 'Shop By Brand',
@@ -77,87 +83,60 @@ class MenScreen extends StatelessWidget {
   }
 }
 
-const _highlights = [
-  Thumbnail(
-    title: 'Member Days is Coming',
-    imageSrc: '',
-  ),
-  Thumbnail(
-    title: 'Cop Your Fave 👟 Drop',
-    imageSrc: '',
-  ),
-  Thumbnail(
-    title: 'Sneakers of the Week',
-    imageSrc: '',
-  ),
-  Thumbnail(
-    title: 'Air Zoom G.T. Cut 2',
-    imageSrc: '',
-  ),
-  Thumbnail(
-    title: 'Nike React Pegasus Trail 4',
-    imageSrc: '',
-  ),
-  Thumbnail(
-    title: 'Nike React Infinity Run Flyknit 3',
-    imageSrc: '',
-  ),
-  Thumbnail(
-    title: 'Nike Metcon 8',
-    imageSrc: '',
-  ),
-  Thumbnail(
-    title: 'Nike Waffle One SE',
-    imageSrc: '',
-  ),
-  Thumbnail(
-    title: 'Air Max Flyknit Racer',
-    imageSrc: '',
-  ),
-  Thumbnail(
-    title: 'Nike By You',
-    imageSrc: '',
-  ),
-];
-
-const _discountOffers = [
-  DiscountedProduct(
-    name: 'Nike Space Hippie 04',
-    price: 7595,
-    discountedPrice: 4559,
-  ),
-  DiscountedProduct(
-    name: 'Nike Free Metcon 4',
-    price: 6445,
-    discountedPrice: 3869,
-  ),
-  DiscountedProduct(
-    name: 'Nike Dri-FIT Run Division Rise 365',
-    price: 2195,
-    discountedPrice: 1759,
-  ),
-  DiscountedProduct(
-    name: 'Nike Sportswear',
-    price: 7595,
-    discountedPrice: 4559,
-  ),
-  DiscountedProduct(
-    name: 'Nike Sport Clash',
-    price: 1995,
-    discountedPrice: 1199,
-  ),
-  DiscountedProduct(
-    name: 'Nike Air Max 90',
-    price: 7345,
-    discountedPrice: 4409,
-  ),
-];
+// const _discountOffers = [
+//   DiscountedProduct(
+//     name: 'Nike Space Hippie 04',
+//     price: 7595,
+//     discountedPrice: 4559,
+//   ),
+//   DiscountedProduct(
+//     name: 'Nike Free Metcon 4',
+//     price: 6445,
+//     discountedPrice: 3869,
+//   ),
+//   DiscountedProduct(
+//     name: 'Nike Dri-FIT Run Division Rise 365',
+//     price: 2195,
+//     discountedPrice: 1759,
+//   ),
+//   DiscountedProduct(
+//     name: 'Nike Sportswear',
+//     price: 7595,
+//     discountedPrice: 4559,
+//   ),
+//   DiscountedProduct(
+//     name: 'Nike Sport Clash',
+//     price: 1995,
+//     discountedPrice: 1199,
+//   ),
+//   DiscountedProduct(
+//     name: 'Nike Air Max 90',
+//     price: 7345,
+//     discountedPrice: 4409,
+//   ),
+// ];
 
 const _runningShoes = [
-  Thumbnail(title: 'The On-The-Goer'),
-  Thumbnail(title: 'The Jogger'),
-  Thumbnail(title: 'The Runner'),
-  Thumbnail(title: 'The Runner'),
+  Thumbnail(
+    title: 'The On-The-Goer',
+    imageSrc:
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0a5fd739-f66d-46c9-a909-048816de4017/free-run-2-shoes-brpN8q.png",
+  ),
+  Thumbnail(
+    title: 'The Jogger',
+    imageSrc:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b5cbae38-2cf5-4c09-a33b-84776ced2bb8/react-miler-3-road-running-shoes-7bGFwT.png",
+  ),
+  Thumbnail(
+    title: 'The Runner',
+    imageSrc:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5218dd66-7865-48c9-b4d9-87ed201eed2b/zoomx-vaporfly-next-2-road-racing-shoes-D4ntS0.png",
+  ),
+  Thumbnail(
+    title: 'The Racer',
+    imageSrc:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dec81d47-4188-405f-a126-37c47c665e87/zoomx-vaporfly-next-2-road-racing-shoes-fG92S8.png",
+  ),
 ];
 
 const _popularSearches = [
@@ -165,31 +144,4 @@ const _popularSearches = [
   'Air Jordan 1',
   'Air Max',
   'Blazer',
-];
-
-const _recommendations = [
-  Product(
-    name: 'NOCTA Hot Step Air Terra',
-    price: 7795,
-  ),
-  Product(
-    name: 'Zion 2 PF',
-    price: 6595,
-  ),
-  Product(
-    name: 'Nike ZoomX Vaporfly NEXT% 2',
-    price: 10995,
-  ),
-  Product(
-    name: 'Nike Waffle One SE',
-    price: 5295,
-  ),
-  Product(
-    name: 'Nike Everyday Plus',
-    price: 495,
-  ),
-  Product(
-    name: 'Chelsea F.C. 2022/23 Stadium Home',
-    price: 3595,
-  ),
 ];

@@ -1,0 +1,74 @@
+{
+  "men": [
+    {
+      "name": "Nike Air Zoom Alphafly NEXT% 2",
+      "price": 14495,
+      "images": [
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/589e8719-84e3-43ef-84cf-c22cb5c1513a/air-zoom-alphafly-next-2-road-racing-shoes-MRSlSl.png"
+      ]
+    },
+    {
+      "name": "Nike ZoomX Vaporfly NEXT% 2",
+      "price": 10995,
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/333b7aa7-8121-4b2d-b85f-45fc31e10058/zoomx-vaporfly-next-2-road-racing-shoes-zgvZjF.png"
+      ]
+    },
+    {
+      "name": "Air Jordan XXXVI Low Luka",
+      "price": 9195,
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/abd51fdf-a7b7-4a2f-aae9-a5b0a81b31ed/air-jordan-xxxvi-low-luka-basketball-shoes-zNLHjc.png"
+      ]
+    },
+    {
+      "name": "Air Jordan 5 Retro 'Green Bean",
+      "price": 10595,
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/70469852-3b98-4812-bb0c-a152fa52480f/air-jordan-5-retro-green-bean-shoes-KNZDfn.png"
+      ]
+    },
+    {
+      "name": "Air Jordan 5 Retro Low SP",
+      "price": 10595,
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/eb34b993-0f77-4896-9d1c-0c6584cf1eb2/air-jordan-5-retro-low-sp-shoes-pqJQVg.png"
+      ]
+    },
+    {
+      "name": "Nike Phantom GT2 Dynamic Fit Elite FG",
+      "price": 10559,
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e1246d73-d232-4b83-8933-0e92794c6def/phantom-gt2-dynamic-fit-elite-fg-football-boots-c2H8s5.png"
+      ]
+    },
+    {
+      "name": "Nike Air Force 1 '07 LV8 EMB",
+      "price": 6195,
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/737349c6-0fa8-47f9-a9ce-8e62359830d6/air-force-1-07-lv8-emb-shoes-mShhbj.png"
+      ]
+    },
+    {
+      "name": "Nike ZoomX Vaporfly Next% 2",
+      "price": 14495,
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/1622d34a-b828-4483-a974-74ca66bfb8b5/zoomx-vaporfly-next-2-road-racing-shoes-D4ntS0.png"
+      ]
+    },
+    {
+      "name": "Air Jordan 1 Mid",
+      "price": 6595,
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0b2c9835-0be9-475d-8e4e-0532a81df7b2/air-jordan-1-mid-shoes-BpARGV.png"
+      ]
+    },
+    {
+      "name": "Air Jordan 12 Retro",
+      "price": 10895,
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9890f9df-78dc-4307-83f5-e7dd738d6460/air-jordan-12-retro-shoe-WwCSBH.png"
+      ]
+    }
+  ]
+}

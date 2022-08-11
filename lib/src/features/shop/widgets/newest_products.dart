@@ -20,7 +20,7 @@ class NewestProducts extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 16),
+        const SizedBox(height: 32),
         GridView.count(
           crossAxisCount: 3,
           primary: false,
@@ -30,7 +30,11 @@ class NewestProducts extends StatelessWidget {
           crossAxisSpacing: 4.0,
           childAspectRatio: aspectRatio,
           children: [
-            for (final product in products) ProductThumbnail(product: product),
+            for (final product in products)
+              ProductThumbnail(
+                size: 112.0,
+                product: product,
+              ),
           ],
         ),
         const SizedBox(height: 16),
@@ -55,30 +59,3 @@ class NewestProducts extends StatelessWidget {
     );
   }
 }
-
-const _justInItems = [
-  {
-    'name': 'NOCTA Hot Step Air Terra',
-    'price': 7795,
-  },
-  {
-    'name': 'Zion 2 PF',
-    'price': 6595,
-  },
-  {
-    'name': 'Nike ZoomX Vaporfly NEXT% 2',
-    'price': 10995,
-  },
-  {
-    'name': 'Noke Waffle One SE',
-    'price': 5295,
-  },
-  {
-    'name': 'Nike Everyday Plus',
-    'price': 495,
-  },
-  {
-    'name': 'Chelsea F.C. 2022/23 Stadium Home',
-    'price': 3595,
-  },
-];

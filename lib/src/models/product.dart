@@ -43,9 +43,9 @@ class Product {
       category: json['category'],
       style: json['style'],
       country: json['country'],
-      images: List<String>.from(json['images']),
-      sizes: List<String>.from(json['sizes']),
-      isFavorited: json['isFavorited'] ?? false,
+      images: List<String>.from(json['images'] ?? []),
+      sizes: List<String>.from(json['sizes'] ?? []),
+      isFavorited: false,
     );
   }
 }
