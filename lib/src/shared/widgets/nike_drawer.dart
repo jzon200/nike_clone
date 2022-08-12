@@ -1,8 +1,11 @@
-import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:flutter/material.dart';
 
+import '../../models/drawer_screens.dart';
+
 class NikeDrawer extends StatelessWidget {
-  const NikeDrawer({Key? key}) : super(key: key);
+  const NikeDrawer({Key? key, required this.args}) : super(key: key);
+
+  final DrawerScreens args;
 
   @override
   Widget build(BuildContext context) {
@@ -25,24 +28,23 @@ class NikeDrawer extends StatelessWidget {
               ],
             ),
           ),
-          for (final item in _listTiles)
+          for (final drawerScreen in DrawerScreens.values)
             ListTile(
-              leading: Icon(item['icon'] as IconData),
-              title: Text((item['title'] as String)),
-              onTap: () {},
+              leading: Icon(drawerScreen.iconData),
+              title: Text((drawerScreen.title)),
+              selected: drawerScreen.routeName == args.routeName,
+              selectedColor: Colors.black,
+              selectedTileColor: Colors.grey[350],
+              onTap: () {
+                Navigator.popAndPushNamed(
+                  context,
+                  drawerScreen.routeName,
+                  arguments: drawerScreen,
+                );
+              },
             )
         ],
       ),
     );
   }
 }
-
-const _listTiles = [
-  {'title': 'Discover', 'icon': Icons.search},
-  {'title': 'Shop', 'icon': Icons.storefront},
-  {'title': 'Events', 'icon': Icons.event_outlined},
-  {'title': 'Order', 'icon': BootstrapIcons.box_seam},
-  {'title': 'Favorites', 'icon': Icons.favorite_outline},
-  {'title': 'Inbox', 'icon': Icons.mail_outline},
-  {'title': 'Settings', 'icon': Icons.settings_outlined},
-];

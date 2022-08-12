@@ -6,7 +6,7 @@ import '../../../models/models.dart';
 
 class MockNikeService {
   static Future<ShopData> getShopData(String route) async {
-    await Future.delayed(const Duration(seconds: 2));
+    // await Future.delayed(const Duration(seconds: 2));
 
     final weeksHiglights = await _getHighlights(route);
     final collections = await _getCollections(route);

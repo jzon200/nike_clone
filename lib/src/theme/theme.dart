@@ -18,6 +18,7 @@ ThemeData buildNikeTheme() {
         statusBarColor: nikeBlack87,
       ),
     ),
+    listTileTheme: ListTileThemeData(textColor: Colors.grey[700]),
     dividerTheme: base.dividerTheme.copyWith(color: Colors.black54),
     tabBarTheme: const TabBarTheme(
       indicator: UnderlineTabIndicator(

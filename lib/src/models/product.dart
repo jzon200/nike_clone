@@ -45,7 +45,6 @@ class Product {
       country: json['country'],
       images: List<String>.from(json['images'] ?? []),
       sizes: List<String>.from(json['sizes'] ?? []),
-      isFavorited: false,
     );
   }
 }

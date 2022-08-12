@@ -83,39 +83,6 @@ class MenScreen extends StatelessWidget {
   }
 }
 
-// const _discountOffers = [
-//   DiscountedProduct(
-//     name: 'Nike Space Hippie 04',
-//     price: 7595,
-//     discountedPrice: 4559,
-//   ),
-//   DiscountedProduct(
-//     name: 'Nike Free Metcon 4',
-//     price: 6445,
-//     discountedPrice: 3869,
-//   ),
-//   DiscountedProduct(
-//     name: 'Nike Dri-FIT Run Division Rise 365',
-//     price: 2195,
-//     discountedPrice: 1759,
-//   ),
-//   DiscountedProduct(
-//     name: 'Nike Sportswear',
-//     price: 7595,
-//     discountedPrice: 4559,
-//   ),
-//   DiscountedProduct(
-//     name: 'Nike Sport Clash',
-//     price: 1995,
-//     discountedPrice: 1199,
-//   ),
-//   DiscountedProduct(
-//     name: 'Nike Air Max 90',
-//     price: 7345,
-//     discountedPrice: 4409,
-//   ),
-// ];
-
 const _runningShoes = [
   Thumbnail(
     title: 'The On-The-Goer',
